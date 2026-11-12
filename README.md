@@ -1,28 +1,62 @@
-# PulseFlow — SaaS Landing Page
+# PulseFlow — SaaS Workflow & Sprint Analytics Landing Page
 
-A clean, responsive landing page for **PulseFlow**, a SaaS workflow and sprint analytics platform built for the **Sankar Group Front-End Development Internship Assignment**.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-pluseflow.vercel.app-4F46E5?style=for-the-badge)](https://pluseflow.vercel.app/)
+
+A clean, responsive SaaS landing page for **PulseFlow**, built for the **Sankar Group Front-End Development Internship Assignment**.
+
+**Live Website:** [https://pluseflow.vercel.app/](https://pluseflow.vercel.app/)
+
+---
+
+## Overview
+
+PulseFlow is a fictional SaaS platform that connects team tasks, pull requests, and daily async check-ins into a single real-time workspace—helping product and engineering teams spot blockers early without repetitive status meetings.
+
+### Key Sections Implemented
+- **Navigation Bar:** Sticky header with custom SVG logo, smooth section links, mobile hamburger menu, and **Get Started** CTA.
+- **Hero Section:** Product headline, value proposition, dual CTAs, trust badge, and a custom HTML/CSS live sprint dashboard preview.
+- **Features:** 6 feature cards with inline SVG icons covering async check-ins, sprint analytics, blocker detection, integrations, role-based views, and security.
+- **How It Works / About:** 3-step onboarding breakdown plus a key metrics banner.
+- **Pricing:** 3-tier pricing (`Starter`, `Pro`, `Enterprise`) with an interactive **Monthly / Annual (20% off)** billing toggle and plan buttons that pre-fill the demo form.
+- **Contact / Demo Form & Footer:** Client-side validated demo request form with inline error messages, confirmation state, contact details, and responsive footer.
+
+---
 
 ## Technologies Used
-- **HTML5**: Semantic structure with accessible landmarks (`header`, `main`, `section`, `footer`) and ARIA attributes.
-- **CSS3**: Custom properties (design tokens), CSS Grid & Flexbox layouts, responsive breakpoints for tablet and mobile, and subtle hover/focus transitions.
-- **Vanilla JavaScript (ES6+)**: Smooth navigation, mobile hamburger menu toggle, monthly/annual pricing toggle, plan-to-form prefill, and client-side form validation.
+
+- **HTML5:** Semantic landmarks (`<header>`, `<main>`, `<section>`, `<footer>`) and ARIA accessibility attributes.
+- **CSS3:** Custom properties (design tokens), CSS Grid & Flexbox, responsive breakpoints (`960px` tablet, `680px` mobile), and smooth transitions.
+- **Vanilla JavaScript (ES6+):** Mobile menu toggle, billing cycle switcher, plan-to-form prefill, input sanitization, and form validation.
+- **Security Hardening:** Content Security Policy (CSP), `X-Content-Type-Options: nosniff`, `Referrer-Policy`, `maxlength` constraints, honeypot bot protection, and safe `textContent` rendering.
+
+---
 
 ## Project Structure
+
 ```text
-├── index.html       # Complete landing page markup
-├── styles.css       # Responsive styling and component design system
+├── index.html       # Semantic landing page markup & security meta headers
+├── styles.css       # Responsive design system & component styles
 ├── script.js        # Interactive UI behaviors & form validation
-├── README.md        # Setup instructions & project overview
-└── EXPLANATION.md   # Short write-up on design choices & challenges
+├── favicon.svg      # Custom SVG favicon matching the PulseFlow logo
+├── README.md        # Project documentation & setup instructions
+└── EXPLANATION.md   # Short summary of design choices & challenges solved
 ```
 
-## How to Run Locally
-No build tools or dependencies are required.
+---
 
-1. Download or clone this folder.
-2. Open `index.html` directly in any modern web browser (Chrome, Edge, Firefox, Safari).
-   - *Optional:* Use VS Code **Live Server** or run `npx serve .` in the project folder to serve it on `localhost`.
+## Run Locally
 
-## How to Deploy Online (Free)
-- **GitHub Pages**: Push the files to a GitHub repository, go to **Settings → Pages**, select the `main` branch, and save.
-- **Netlify / Vercel**: Drag and drop the project folder onto [app.netlify.com/drop](https://app.netlify.com/drop) for an instant live URL.
+No build tools or package installations are required.
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/chandan966/PulseFlow.git
+   cd PulseFlow
+   ```
+2. Open `index.html` directly in any modern browser (or use VS Code **Live Server** / `npx serve .`).
+
+---
+
+## Design Choices & Challenges
+
+See [EXPLANATION.md](./EXPLANATION.md) for a concise summary of the design decisions and responsive layout challenges solved in this project.
